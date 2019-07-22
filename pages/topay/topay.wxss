@@ -1,0 +1,6 @@
+/* pages/topay/topay.wxss */
+.payCont{ width: 90%; margin: 0 auto;}
+.photo{ width: 207rpx; height: 175rpx;margin: 0 auto; display: block; margin-top: 145rpx; }
+.payCont .mny{ font-size: 60rpx;  margin-top: 80rpx; margin-bottom: 200rpx; line-height: 1;}
+.titFS{ padding-top: 100rpx; line-height: 1; padding-bottom: 30rpx;}
+.payFs{ padding-bottom: 10rpx;}

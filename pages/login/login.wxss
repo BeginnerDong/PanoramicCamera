@@ -1,0 +1,13 @@
+/* pages/login/login.wxss */
+.loginTop{padding-bottom:60rpx; }
+.loginTop .bjPic{ width: 100%;}
+.logoForm{width: 90%; margin: 0 auto;}
+.logoForm .lis{padding: 40rpx 0 18rpx 0;border-bottom: 2rpx solid #eee; position: relative;}
+.logoForm .lis .icon{ width: 40rpx;height: 40rpx; display: inline-block; position: absolute; left: 19rpx; top: 45rpx;}
+.logoForm .lis .text{width:70%; height: 40rpx; line-height: 26rpx; display: inline-block; font-size: 26rpx; color: rgba(102,102,102,0.7);padding:0 20rpx 0 85rpx;}
+.logoForm .pasWTex .text{ width:50%;}
+.logoForm .pasWTex .yzm{background: none; border:1px solid #fff;color: #05b5ff; margin: 0; line-height: 40rpx; position: absolute; top: 45rpx; right: 20rpx;}
+.explain{ color: #7b7b7b; padding: 30rpx 3% 100rpx 3%;}
+
+
+

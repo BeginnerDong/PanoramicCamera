@@ -1,0 +1,12 @@
+<!--pages/orderXq/orderXq.wxml-->
+<view class="indexbox">
+  <!-- 信息列表 -->
+    <view class="contbox bg1 radiu15">
+      <view class="msgLis" wx:for="{{indexForm}}">
+        <view class="left font26 color2">{{item.title}}</view>
+        <view class="right font28 color2">{{item.msginfor}}</view>
+      </view>
+      <button class="finalBtn pubbj color5 center font26 radiu40" bindtap="tapName" bindtap="ordergoPar">结算</button>
+    </view>
+    <button class="pubbj bigBtnB color5 font15" type="submit" bindtap="ordergoPar">去结算</button>
+</view>

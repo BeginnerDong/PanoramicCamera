@@ -1,0 +1,3 @@
+/* pages/orderXq/orderXq.wxss */
+ @import "../index/index.wxss"
+ .bigBtnB{margin-top:290rpx }

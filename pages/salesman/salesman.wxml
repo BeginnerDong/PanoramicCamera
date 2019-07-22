@@ -1,0 +1,10 @@
+<!--pages/salesman/salesman.wxml-->
+<view class="salemanCont">
+  <image class="bjtu" src="../../image/img2.png"></image>
+  <view class="seach bg1 radiu15">
+      <image class="icon" src="../../image/search-icon1.png"></image>
+      <input class="write font28" type="number" placeholder="输入手机号码" maxlength="11" ></input>
+      <button class="seacBtn pubbj color5 center font26" type="submit" bindtap="seachsales">搜索</button>
+  </view>
+</view>
+

@@ -1,0 +1,11 @@
+<!--pages/topay/topay.wxml-->
+<view class="payCont">
+  <image class="photo" src="../../image/img4.png"></image>
+  <view class="mny center color1 fat-font">￥ {{payMoney}}/天</view>
+  <view class="writeBtn">
+    <view class="LBtn btn color1 pubColor" bindtap="closepay" open-type='navigate'>取消支付</view>
+    <view class="RBt btn pubbj color5"  bindtap="gopay"  open-type='navigate'>确认支付</view>
+  </view>
+    <view class="titFS font26 color1 fat-font">收费方式：</view>
+    <view class="payFs font24 color2" wx:for="{{payFs}}">{{item}}</view>
+</view>

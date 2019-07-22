@@ -1,0 +1,3 @@
+/* pages/sales2/sales2.wxss */
+
+ @import "../saleing/saleing.wxss"

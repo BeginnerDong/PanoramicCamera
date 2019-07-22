@@ -1,0 +1,9 @@
+page{ background:#f5f5f5;}
+.indexbox{padding: 30rpx; box-sizing: border-box;}
+.contbox{ margin-bottom: 30rpx; position: relative;}
+.msgLis{ padding: 40rpx 30rpx; border-top: 2rpx solid #e1e1e1; line-height: 28rpx; }
+.msgLis:first-child{border-top: none;}
+.msgLis .left,.msgLis .right{ display: inline-block;}
+.msgLis .left{ margin-right: 60rpx;}
+.msgLis:nth-child(3) .right{ color: red}
+.finalBtn{width: 120rpx; height: 50rpx; line-height: 50rpx; position: absolute; right: 30rpx; bottom: 30rpx;padding: 0;}

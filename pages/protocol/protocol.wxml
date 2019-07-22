@@ -1,0 +1,9 @@
+<!--pages/protocol/protocol.wxml-->
+<view class="protocolPg">
+  <view class="title font28">共享协议</view>
+  <view class="texLis font26 color2" wx:for="{{protext}}">{{item}}</view>
+    <view class="writeBtn">
+      <view class="LBtn btn color1 pubColor" bindtap="closeBtn" open-type='navigate'>取消签署</view>
+      <view class="RBt btn pubbj color5"  bindtap="agreenBtn"  open-type='navigate'>同意签署</view>
+    </view>
+</view>

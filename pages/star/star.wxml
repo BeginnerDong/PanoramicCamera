@@ -1,0 +1,7 @@
+<!--pages/star/star.wxml-->
+
+  <view style="height:100%" class="starpage"  bindtap="goProtocol" >
+        <view class="open">关闭</view>
+        <image class="allHpic" src="../../image/img1.png"></image>
+  </view>
+

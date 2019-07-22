@@ -1,0 +1,19 @@
+<!--pages/saleing/saleing.wxml-->
+<view class="saleContbox">
+  <view class="saleMain bg1 radiu15">
+      <view class="top">
+        <image class="leftPhoto radiu50" src="{{userPhoto}}"></image>
+        <view class="righMsg ligh1">
+          <view class="name font24 color2">{{userName}}</view>
+          <view class="number font26 color1">15689620023</view>
+        </view>
+      </view>
+      <view class="bottom radiu15">
+        <view class="botCont  radiu15" wx:for="{{orderCount}}">
+          <view class="name font24 color2">{{item.name}}</view>
+          <view class="infor font26 color1">{{item.infor}}</view>
+        </view>
+      </view>
+      <button class="overBtn borderBtn bdColor1 borderH60 font26" bindtap="overOrder">结束订单</button>
+  </view>
+</view>
