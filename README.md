@@ -1,2 +1,2 @@
-# PanoramicCamera
+# SolelyTech
 miniprogram

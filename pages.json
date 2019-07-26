@@ -1,0 +1,83 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "vr租赁",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		{
+			"path": "pages/salesman/salesman",
+			"style": {
+				"navigationBarTitleText": "salesman",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登陆",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		{
+			"path": "pages/orderList/orderList",
+			"style": {
+				"navigationBarTitleText": "订单列表",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		{
+			"path": "pages/orderXq/orderXq",
+			"style": {
+				"navigationBarTitleText": "orderXq",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		{
+			"path": "pages/payEwm/payEwm",
+			"style": {
+				"navigationBarTitleText": "payEwm",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		
+		{
+			"path": "pages/protocol/protocol",
+			"style": {
+				"navigationBarTitleText": "protocol",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		{
+			"path": "pages/star/star",
+			"style": {
+				"navigationBarTitleText": "star",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		},
+		{
+			"path": "pages/topay/topay",
+			"style": {
+				"navigationBarTitleText": "topay",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		}
+    ],
+	"globalStyle": {
+		//"navigationStyle":"custom",
+		"navigationBarTextStyle": "light",
+		"navigationBarTitleText": "vr租赁",
+		"navigationBarBackgroundColor": "#1d1d1d",
+		"backgroundColor": "#1d1d1d"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

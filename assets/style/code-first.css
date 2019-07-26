@@ -1,0 +1,23 @@
+body{
+	background: #fff;
+}
+.img{
+	width: 375px;
+	height: 665px;
+	
+}
+.img img{
+	width: 375px;
+	height: 533px;
+}
+.imgb{
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+	position: absolute;
+	bottom: 0;
+}
+.imgb img{
+	width: 60px;
+	height: 60px;
+}

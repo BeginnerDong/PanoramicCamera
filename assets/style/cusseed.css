@@ -1,0 +1,119 @@
+.top{
+	height:40px ;
+	width: 100%;
+}
+.top-left{
+	background: #fff;
+	width:71%;
+	height: 100%;
+	float: left;
+	font-size: 15px;
+	line-height: 40px;
+}
+.top-right{
+	background: #fff;
+	width:26%;
+	height: 100%;
+	float: right;
+}
+
+
+
+.best-box{
+	border:solid 1px #EEEEEE;
+	width: 42%;
+	height:301px;
+	border-radius:10px;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	margin-top: 10px;
+	display: inline-block;
+	margin-left: 8px;
+}
+.best-box-top{
+	width: 100%;
+	height: 165px;
+	
+}
+.best-box-top img{
+	height: 100%;
+	width: 100%;
+}
+.best-num{
+	font-size: 12px;
+	color: #EBEBEB;
+	background: rgba(0,0,0,0.6);
+	border-radius: 18px;
+	position: absolute;
+	padding: 3px 12px;
+	top: 130px;
+	left: 6px;
+	}
+.best-text{
+	margin: 10px 10px 5px 10px;
+	text-align: justify;
+	font-size: 12px;
+	height: 46px;
+	line-height: 21px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	
+}
+.best-money1{
+	height: 18px;
+	width: 38%;
+	margin-left: 15px;
+	font-size: 10px;
+	line-height:15px ;
+	border-radius: 4px;
+	border: solid 1px #F98A48;
+	
+}
+.best-money2{
+	height: 18px;
+	width: 38%;
+	margin-left: 5px;
+	font-size: 10px;
+	line-height:18px ;
+	border-radius: 4px;
+	border: solid 1px #F14667;
+}
+.span1{
+	width: 50%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+.span2{
+	width: 50%;
+	height: 100%;
+	color: #F98A48;
+	text-align: center;
+}
+
+.best-time{
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	top: 130px;
+	color: #fff;
+	font-size:12px ;text-align: center;
+	line-height: 30px;
+}
+.best-time span{
+	background: #F98A48;
+	padding: 1px 4px;
+	border-radius: 3px;
+}
+.best-time2{
+	font-size: 15px;
+}
+.best-moneyleft{
+	font-size: 13px;
+	color: #F2456F;
+	margin-left: 30px;
+}

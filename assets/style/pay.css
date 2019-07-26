@@ -1,0 +1,29 @@
+.home{
+	border-bottom: solid 1px #EDEDED;
+}
+.describe{
+	/* border: solid 1px red; */
+	width: 100%;
+	background: #fff;
+	padding: 15px;
+	margin: 10px auto;
+	border-radius: 6px;
+}
+.describe .color3{
+	font-size: 12px;
+}
+.describe .color2{
+	font-size: 14px;
+	line-height: 25px;
+	text-align: justify;
+	margin-top: 5px;
+}
+.foter-fixd{
+	height: 50px;
+	width: 100%;
+	background: #fff;
+line-height: 50px;
+}
+.foter-fixd div{
+	float: left;
+}

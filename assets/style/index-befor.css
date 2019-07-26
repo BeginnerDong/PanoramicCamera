@@ -1,0 +1,21 @@
+.home{
+	background:#F2F2F2 ;
+}
+body{
+	background: #fff;
+}
+
+.foter{
+	border: solid 1px red;
+	height:54px ;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background: #F2F2F2;
+	
+}
+.foter div{
+	border: solid 1px green;
+	height: 100%;
+	width: 29.3%;
+}

@@ -1,0 +1,68 @@
+body{
+	background: #fff;
+}
+html{
+	background: #fff!important;
+}
+.home{
+	background: #F2F2F2;
+}
+.content-top{
+	height: 55px;
+	width: 100%;
+	font-size: 16px;
+	text-indent: 15px;
+	line-height: 40px;
+}
+.content-more{
+	width: 100%;
+	border-bottom: solid 1px #F0F0F0;
+}
+.content-more .ilblock{
+		border: solid 1px #F0F0F0;
+		border-radius: 20px;
+		margin-left: 10px;
+		margin-bottom: 24px;
+		padding: 4px 15px;
+		font-size: 15px;
+		color: rgb(34,34,34);
+}
+/* .content-more .ilblock:hover{
+	background: linear-gradient(to right,#FF9B5C,#FF6160);
+} */
+button{
+	text-align: center;
+	width: 345px;
+	margin: 80px auto;
+	border-radius: 20px;
+	height: 40px;
+	color: #fff;
+	background: linear-gradient(to right,#FF9B5C,#FF6160);
+}
+
+.more-top .ilblock img{
+	width: 16px;
+	margin-left: 10px;
+}
+.success{
+	background: rgba(0,0,0,0.55);
+	width: 130px;
+	height: 145px;
+	position: absolute;
+	z-index: 5;
+	top: 220px;
+	border-radius: 6px;
+	left: 120px;
+	
+}
+.success img{
+	width: 60px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.success div{
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	margin-top: 20px;
+}

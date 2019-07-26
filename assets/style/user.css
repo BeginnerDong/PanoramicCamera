@@ -1,0 +1,64 @@
+.top{
+	width: 100%;
+	height: 185px;
+	background: url(../../static/images/about-img2.png) no-repeat;
+	background-size: 100%;
+	border: solid 1px #F2F2F2;
+}
+.top-box{
+	width: 92%;
+	height: 125px;
+	border-radius: 12px;
+	margin: 58px auto 0px;
+	background: #fff;
+	border: solid 1px #fff;
+}
+.tou-img{
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	margin: 14px auto;
+	overflow: hidden;
+	border: solid 1px #fff;
+}
+.tou-img img{
+	width: 100%;
+	height: 100%;
+}
+.user-name{
+	margin: 0 auto;
+	width: 200px;
+	text-align: center;
+	font-size: 15px;
+	0verflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.status{
+	padding: 20px 0px;
+	margin: 15px 0px;
+}
+.status-item{
+	width:20%;
+	height: 70px;
+	float: left;
+	text-align: center;
+}
+.status-text{
+	font-size: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.list a{
+	display: inline;
+}
+.list li{
+	height: 46px;
+	line-height: 46px;
+	border-bottom: solid 1px #EFEFEF;
+	background: url(../../static/images/home-icon9.png) no-repeat 95% center;
+	background-size: 1.6%;
+	text-indent: 42px;
+	font-size:14px
+}

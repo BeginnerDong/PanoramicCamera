@@ -1,0 +1,319 @@
+
+.logo{
+	width: 49%;
+}
+.logo-right-find{
+	width: 36rpx;
+	height:36rpx;
+	float: right;
+	position: relative;
+	top: 10rpx;
+}
+.logo-right-span image{
+	width: 20rpx;
+	height: 12rpx;
+	margin-left: 20rpx;
+}
+.logo-right{
+	height: 100%;
+	width: 49%;
+	line-height:48px ;
+	text-align: right;
+}
+
+
+/* =======================geng'duo */
+.commodity{
+	width: 92%;
+	height: 170px;
+	margin: 10px auto;
+}
+.commodity img{
+	width: 360px;
+	height: 170px;
+}
+.radionav-box{
+	margin: 25px 0px 0px 0px;
+}
+.radionav-item{
+	width: 20%;
+	height: 90px;
+	/* border: solid 1px red; */
+	font-size: 13px;
+	text-align: center;
+	margin: 0px;
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+	}
+.radionav-item img{
+	width:46px;
+	height:46px;
+	margin: 0rpx;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.recommend{
+	width: 92%;
+	height: 164px;
+	border-radius: 8px 8px 0px 0px;
+	overflow: hidden;
+	margin: 0 auto;
+	/* border: solid 1rpx; */
+}
+.recommend-top{
+	height: 36px;
+	width: 100%;
+	background: linear-gradient(to right,#FFF1B5,#FBDE66);
+	color: rgb(122,102,21);
+	font-size: 14px;
+}
+.recommend-top span{
+	margin: 12px;
+	line-height: 34px;
+}
+.recommend-top img{
+	width: 20px;
+	height: 25px;
+}
+.recommend-middle{
+	width: 100%;
+	height: 60px;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	border-right: solid 1px #EAEAEA;
+	border-bottom: solid 1px #EAEAEA;
+}
+.recommend-box{
+	border-left: solid 1px #EAEAEA;
+	text-align: center;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+	padding-top:11px;
+}
+.recommend .color1{
+	font-size: 12px;
+}
+.recommend .color2{
+	font-size: 14px;
+	
+}
+
+/* ================= 最火热买*/
+.best-top{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+}
+.besttext{
+	width: 90px;
+	float: right;
+	background: url(../../static/images/home-icon9.png) no-repeat 65px center;
+	background-size: 7%;
+}
+.best-box{
+	border:solid 1px #EEEEEE;
+	width: 66%;
+	height:228px;
+	border-radius:10px ;
+	overflow: hidden;
+	position: relative;
+	
+}
+@media screen and (max-width: 320px) {
+	.best-box{
+		width: 74% !important;
+	}
+}
+.best-box-top{
+	width: 100%;
+	height: 125px;
+	
+}
+.best-box-top img{
+	width: 100%;
+	height: 125px;
+}
+.best-num{
+	padding: 5px 20px;
+	font-size: 12px;
+	color: #EBEBEB;
+	background: rgba(0,0,0,0.6);
+	border-radius: 18px;
+	position: absolute;
+	top: 10px;
+	left: -11px;
+	}
+.best-text{
+	margin: 10px 10px 5px 10px;
+	text-align: justify;
+	font-size: 12px;
+	height: 46px;
+	line-height: 21px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	
+}
+
+.best-money1{
+	height: 21px;
+	width: 30%;
+	margin-left: 15px;
+	position: relative;
+	top: -1px;
+	font-size: 11px;
+	line-height:21px ;
+	border-radius: 4px;
+	border: solid 1px #F98A48;
+}
+@media screen and(max-width:320px) {
+	.best-money1{
+		margin-left: 9px !important;
+		font-size: 10px !important;
+	}
+}
+.best-money2{
+	height: 21px;
+	width:30%;
+	margin-left: 5px;
+	position: relative;
+	top: -1px;
+	font-size: 11px;
+	line-height:21px ;
+	border-radius: 4px;
+	border: solid 1px #F14667;
+}
+.span1{
+	width: 50%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+.span2{
+	width: 50%;
+	height: 100%;
+	color: #F98A48;
+	text-align: center;
+}
+
+/* ============全部商品 */
+.all-store{
+	width: 95%;
+	border-bottom: solid 1px #EAEAEA;
+	margin: 5px auto;
+	padding-bottom: 6px;
+	position: relative;
+}
+.all-store-img{
+	width: 33%;
+	height: 115px;
+	border-radius:6px ;
+	position: relative;
+	overflow: hidden;
+}
+.all-store-img img{
+	width: 115px;
+	height: 115px;
+}
+.all-store-text{
+	width:89% ;
+	font-size: 14px;
+	
+	height: 41px;
+	padding:6px 0 6px 15px ;
+	display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}
+.store-num{
+	padding: 4px 19px;
+	font-size: 12px;
+	color: #EBEBEB;
+	background: rgba(0,0,0,0.6);
+	border-radius: 18px;
+	position: absolute;
+	top: 10px;
+	left: -12px;
+	}
+.all-store-text2{
+	width:100% ;
+	font-size: 13px;
+	float: right;
+	position: absolute;
+	top: 5px;
+	left: 135px;
+}
+.all-store-text2 span{
+	background: #F98A48;
+	border-radius: 2px;
+	padding: 2px 4px;
+	color: #fff;
+	
+}
+.store-textb{
+	position: absolute;
+	top: 27px;
+	left: 120px;
+}
+.store-textc{
+	position: relative;
+	top: 0px,
+}
+
+.best-topred{
+	font-size:13px;
+	color: rgb(241,70,103);
+	margin-left: 20px;
+}
+.best-botred{
+	font-size: 13px;
+	color: rgb(241,70,103);
+	padding-left: 5px;
+}
+
+.time{
+	margin-left: 15px;
+}
+.time .bg3{
+	display: inline-block;
+	color: #fff;
+	width: 23px;
+	height: 16px;
+	border-radius: 2px;
+	line-height: 16px;
+	text-align: center;
+	margin: 0px 3px;
+}
+
+
+
+
+
+
+
+/* ====================西安站 */
+.zhan{
+	width: 100%;
+	position: absolute;
+	top: 51px;
+	z-index: 8;
+	background: #fff;
+	
+}
+.zhan-item{
+	width: 70px;
+	height: 30px;
+	font-size: 13px;
+	color: rgb(34,34,34,);
+	border: solid 1px #EEEEEE;
+	border-radius: 6px;
+	margin-left: 40px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 20px;
+}
+

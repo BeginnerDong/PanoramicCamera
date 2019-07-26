@@ -1,0 +1,17 @@
+button{
+	width: 344px;
+	height: 40px;
+	background: #F98A48;
+	margin: 200px 15px 60px;
+}
+
+.save-box{
+	height: 50px;
+	width: 100%;
+	border-bottom: solid 1px #EAEAEA;
+	line-height: 50px;
+	
+}
+.save-box span{
+	margin-left: 6px;
+}

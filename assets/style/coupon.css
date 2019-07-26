@@ -1,0 +1,54 @@
+.nav-top{
+	width: 100%;
+	height: 40px;
+}
+.nav-list{
+	height: 100%;
+	width: 60px;
+	font-size: 15px;
+	line-height: 40px;
+	text-align: center;
+	margin-left: 34px;
+	margin-right: 20px;
+	color: rgb(153,153,153);
+	border-bottom: solid 2px #fff;
+}
+.list-one{
+	color:#F98A48;
+	border-bottom: solid 2px #F98A48;
+}
+.box{
+	width: 80%;
+	height:119px ;
+	margin:20px auto;
+	position: relative;
+}
+.box img{
+	width: 100%;
+	height:119px ;
+}
+.box-b{
+	width: 100%;
+	height:119px ;
+	margin:20px auto;
+	position: relative;
+}
+.box-b img{
+	width: 100%;
+	height:119px ;
+}
+.money1{
+	position: absolute;
+	color: #EB3941;
+	font-size: 40px;
+	font-weight: bolder;
+	top: 16px;
+	left: 123px;
+}
+.money2{
+	font-size: 20px;
+	position: absolute;
+	top: 87px;
+	left: 100px;
+	color: #fff;
+}
