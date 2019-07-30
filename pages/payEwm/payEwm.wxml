@@ -1,6 +1,0 @@
-<!--pages/payEwm/payEwm.wxml-->
-<view class="center">
-  <image class="ewmPic" src="../../image/code-img.png"></image>
-  <text class="color2 note font24">说明：请长按二维码下载APP使用相机</text>
-  <button class="okbtn h80 font15 radiu15 pubbj color5"  bindtap="ewmokBtn">确认</button>
-</view>

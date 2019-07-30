@@ -1,4 +1,0 @@
-/* pages/payEwm/payEwm.wxss */
-.ewmPic{ width:385rpx; height: 385rpx; display: block; margin: 0 auto; padding-top: 150rpx; }
-.note{ padding: 60rpx 0 200rpx 0; line-height: 1; display: inline-block;}
-.okbtn{ width: 71%; margin: 0 auto; display: block; line-height: 80rpx; }

@@ -1,4 +1,0 @@
-/* pages/orderList/orderList.wxss */
- @import "../index/index.wxss";
-
-.msgLis:last-of-type .right{ color: red}

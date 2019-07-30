@@ -1,5 +1,0 @@
-/* pages/protocol/protocol.wxss */
-.protocolPg{ padding:0 20rpx;}
-.protocolPg .title{text-align: center; line-height: 30rpx; padding-bottom: 40rpx;padding-top:30rpx; color: rgba(34,34,34) }
-.protocolPg .texLis{padding-bottom: 20rpx;}
-.writeBtn{ padding:130rpx 0;}
