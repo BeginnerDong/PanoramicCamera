@@ -3,7 +3,32 @@ import config from "@/config/index.config.js";
 
 
 export default {
-
+	
+	payAll(param, callback) {
+	
+		var allParams = {
+			url: 'Project/Solely/payAll',
+			type: 'post',
+			data: param,
+			sCallback: function(data) {
+				callback && callback(data);
+			}
+		};
+		http.HTTP(allParams);
+	},
+	
+	closeOrder(param, callback) {
+	
+		var allParams = {
+			url: 'Project/Solely/closeOrder',
+			type: 'post',
+			data: param,
+			sCallback: function(data) {
+				callback && callback(data);
+			}
+		};
+		http.HTTP(allParams);
+	},
 
 	WxJssdk(param, callback) {
 

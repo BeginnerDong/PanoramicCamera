@@ -60,7 +60,7 @@
 				if(sale_token){
 					self.$Router.redirectTo({route:{path:'/pages/salesman/salesman'}});
 				}else{
-					self.$Router.redirectTo({route:{path:'/pages/login/login'}});
+					self.$Router.redirectTo({route:{path:'/pages/staffLogin/staffLogin'}});
 				};	
 			}
 		}

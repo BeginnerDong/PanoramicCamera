@@ -3,25 +3,41 @@
 	  <image class="bjtu" src="/static/images/img2.png"></image>
 	  <view class="seach bg1 radiu15">
 	      <image class="icon" src="/static/images/search-icon1.png"></image>
-	      <input class="write font28" type="number" placeholder="输入手机号码" maxlength="11" ></input>
-	      <button class="seacBtn pubbj color5 center font26" type="submit" @click="Router.redirectTo({route:{path:'/pages/saleing/saleing'}})">搜索</button>
+	      <input class="write font28" type="number" placeholder="输入手机号码" maxlength="11" v-model="phone"></input>
+	      <button class="seacBtn pubbj color5 center font26" type="submit" 
+		   @click="goSearch">搜索</button>
 	  </view>
+	  <c-tabbar></c-tabbar>
 	</view>
 </template>
 
 <script>
+	import cTabbar from "@/components/tabbar/tabbar.vue"
 	export default {
-		
+		components: {
+			cTabbar
+		},
 		data() {
 			return {
 				basic_blue:this.$AssetsConfig.basic_blue,
-				Router:this.$Router
+				Router:this.$Router,
+				phone:''
 			};
 		},
 		onLoad:function(){
 			const self = this;	
 		},
 		methods: {	
+			
+			goSearch(){
+				const self = this;
+				if(self.phone!=''){
+					self.Router.navigateTo({route:{path:'/pages/saleing/saleing?phone='+self.phone}})
+				}else{
+					self.$Utils.showToast('请输入手机号搜索', 'none')
+				}
+			},
+			
 		}
 	}
 </script>
