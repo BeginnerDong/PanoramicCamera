@@ -118,58 +118,18 @@
 <style>
 	@import "../../assets/style/public.css";
 	
-	.salemanCont {
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-	}
-
-	.bjtu {
-		width: 100%;
-		height: 100%;
-		display: block;
-	}
-
-	.seach {
-		width: 90%;
-		margin: 0 auto;
-		position: fixed;
-		top: 40%;
-		left: 5%;
-		z-index: 10;
-		height: 50rpx;
-		padding: 15rpx 0;
-	}
-
-	.seach .icon {
-		width: 40rpx;
-		height: 40rpx;
-		display: block;
-		position: absolute;
-		top: 20rpx;
-		left: 30rpx;
-	}
-
-	.seach .write {
-		width: 430rpx;
-		display: inline-block;
-		line-height: 50rpx;
-		height: 50rp;
-		border: none;
-		padding: 0 90rpx;
-	}
-
-	.seacBtn {
-		height: 80rpx;
-		width: 120rpx;
-		position: absolute;
-		right: 0;
-		top: 0;
-		border-radius: 0 15rpx 15rpx 0;
-		margin: 0;
-		line-height: 80rpx;
-		color: #fff;
-	}
+	page{ background: #f5f5f5;}
+	.saleContbox{ padding: 30rpx;}
+	.saleMain{ padding: 30rpx; overflow: hidden; position: relative;}
+	.saleMain .top{ overflow: hidden; padding-bottom: 29rpx; border-bottom: 2rpx solid #f5f5f5}
+	.top .leftPhoto{ width: 100rpx; height: 100rpx;display: inline-block; float: left;}
+	.top .righMsg{ padding:10rpx 0 0 19rpx; float: left;}
+	.top .righMsg .name{padding-bottom: 26rpx;}
+	.bottom{ margin-top: 30rpx; background: #f6f6f6; padding:20rpx;}
+	.botCont{ line-height: 64rpx; overflow: hidden}
+	.botCont .name{ width: 33.3%;float: left;}
+	.botCont .infor{ float: right;}
+	.overBtn{ width: 160rpx;padding: 0;float: right;margin-top: 50rpx; }
+	.orderState{ position: absolute; top: 20rpx; right: 30rpx;}
+	
 </style>
