@@ -38,17 +38,18 @@
 		mounted:function(){
 			const self = this;
 			console.log('$AssetsConfig',this.$AssetsConfig)
-			var route = getCurrentPages().route;
+			var route = getCurrentPages()[0].__route__;
+			console.log('route323',route)
 			if(route=="pages/index/index"){
-				self.src_one = '/static/images/nabar1.png';
-				self.color_one = true;
-				self.src_two = '/static/images/nabar2-a.png';
-				self.color_two = false;
-			}else{
 				self.src_one = '/static/images/nabar1-a.png';
 				self.color_one = true;
 				self.src_two = '/static/images/nabar2.png';
 				self.color_two = false;
+			}else{
+				self.src_one = '/static/images/nabar1.png';
+				self.color_one = false;
+				self.src_two = '/static/images/nabar2-a.png';
+				self.color_two = true;
 			};
 			
 		},

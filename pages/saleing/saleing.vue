@@ -7,20 +7,21 @@
 					<view class="righMsg ligh1">
 						<view class="name font24 color2">{{item.user&&item.user[0]?item.user[0].nickname:''}}</view>
 						<view class="number font26 color1">{{item.phone}}</view>
-						<view class="orderState font24 pubColor">待用户补缴费用</view>
+						<view class="orderState font24 pubColor" v-if="item.express_info=='已延期'">待用户补缴费用</view>
+						<view class="orderState font24 pubColor" v-if="item.transport_status==2">已完结</view>
 					</view>
 				</view>
 				<view class="bottom radiu15">
 					<view class="botCont  radiu15">
 						<view class="name font24 color2">订单开始时间</view>
-						<view class="infor font26 color1">2019-07-20 14:24:30</view>
+						<view class="infor font26 color1">{{item.create_time}}</view>
 					</view>
 					<view class="botCont  radiu15">
 						<view class="name font24 color2">逾期累积费用</view>
-						<view class="infor font26 color1">￥156.6</view>
+						<view class="infor font26 color1">￥{{item.transport_status==2?item.balance:item.topay}}</view>
 					</view>
 				</view>
-				<button class="overBtn borderBtn bdColor1 borderH60 font26" bindtap="overOrder">结束订单</button>
+				<button class="overBtn borderBtn bdColor1 borderH60 font26" v-if="item.transport_status==1" @click="overOrder(index)">结束订单</button>
 			</view>
 		</view>
 	</view>
@@ -57,6 +58,26 @@
 		
 		
 		methods: {
+			
+			overOrder(index) {
+				const self = this;
+				const postData = {};
+				postData.tokenFuncName = 'getMerchantToken';
+				postData.data = {
+					order_id:self.mainData[index].id
+				}
+				const callback = (res) => {
+					if(res.solely_code==100000){
+						self.$Utils.showToast('成功完结', 'none');
+						setTimeout(function() {
+							self.getMainData(true)
+						}, 1000);
+					}else{
+						self.$Utils.showToast(res.msg, 'none');
+					}
+				};
+				self.$apis.closeOrder(postData, callback);
+			},
 
 			getMainData(isNew) {
 				const self = this;
@@ -95,7 +116,7 @@
 						self.mainData.push.apply(self.mainData, res.info.data);
 						for (var i = 0; i < self.mainData.length; i++) {
 							if(self.mainData[i].transport_status==1){
-								if(parseInt(self.mainData[i].pay_time)>parseInt(nowTime)){
+								if(parseInt(self.mainData[i].topay)==0){
 									self.mainData[i].express_info ='未延期'
 								}else{
 									self.mainData[i].express_info ='已延期'
@@ -104,7 +125,14 @@
 								self.mainData[i].express_info ='已完结'
 							}
 						}
-					} 
+					}else{
+						self.$Utils.showToast('未找到相关订单', 'none');
+						setTimeout(function() {
+							uni.navigateBack({
+								delta:1
+							})
+						}, 1000);
+					}
 					console.log(self.mainData)
 					self.$Utils.finishFunc('getMainData');
 				};

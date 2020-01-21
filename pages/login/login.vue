@@ -12,8 +12,9 @@
 		    </view>
 		    <view class="lis pasWTex">
 		      <image class="icon" src="/static/images/login-icon3.png"></image>
-		      <input class="text" type="text" value="" placeholder="请输入验证码"></input>
-		      <view class="yzm font24" :style="'background-color:'+basic_blue">获取验证码</view>
+		      <input class="text" type="text" value="" placeholder="请输入验证码" v-model="submitData.code"></input>
+		      <view class="yzm font24" @click="sendCode" v-if="!hasSend" :style="'color:'+basic_blue">{{text}}</view>
+			  <view class="yzm font24"  v-else :style="'color:'+basic_blue">{{text}}</view>
 		    </view>
 		    <view class="explain font24">输入未注册的手机号，将自动创建平台账号、注册即视为同意</view>
 		      <button class="bigBtnB pubbj color5 font15" open-type="getUserInfo"  @getuserinfo="Utils.stopMultiClick(submit)" role="button" aria-disabled="false">登录</button>
@@ -31,9 +32,13 @@
 				basic_blue:this.$AssetsConfig.basic_blue,
 				Router:this.$Router,
 				submitData:{
-					phone:''
+					phone:'',
+					code:''
 				},
-				Utils:this.$Utils
+				Utils:this.$Utils,
+				currentTime:61,
+				text:'获取验证码',
+				hasSend:false,
 			};
 		},
 		
@@ -42,6 +47,51 @@
 		},
 		
 		methods: {	
+			
+			sendCode(){
+				var self = this;
+				console.log(111)
+				if(self.hasSend){
+					return;
+				};
+				var phone = self.submitData.phone;
+				
+				if (phone.trim().length != 11 || !/^1[3|4|5|6|7|8|9]\d{9}$/.test(phone)) {
+					
+					self.$Utils.showToast('请输入正确的手机号', 'none');
+					return;
+				}
+				var postData = {
+					data:{
+						phone:self.submitData.phone
+					}
+					
+				};
+				var callback = function(res){
+					if(res.solely_code==100000){
+						self.hasSend = true;
+						var interval = setInterval(function() {
+							self.currentTime--; //每执行一次让倒计时秒数减一
+						
+							self.text=self.currentTime + 's';//按钮文字变成倒计时对应秒数
+							
+							//如果当秒数小于等于0时 停止计时器 且按钮文字变成重新发送 且按钮变成可用状态 倒计时的秒数也要恢复成默认秒数 即让获取验证码的按钮恢复到初始化状态只改变按钮文字
+							if (self.currentTime <= 0) {
+								clearInterval(interval)
+								
+								self.hasSend = false;
+								self.text='重新发送';
+								self.currentTime= 61;
+								
+							}
+							
+						}, 1000);
+					}else{
+						self.$Utils.showToast('发送失败', 'none');
+					};
+				};
+				self.$apis.codeGet(postData, callback);
+			},
 			
 			submit() {
 				const self = this;
@@ -70,8 +120,13 @@
 				postData.searchItem = {
 					user_no:uni.getStorageSync('user_info').user_no
 				};
-				postData.data = {};
-				postData.data = self.$Utils.cloneForm(self.submitData);
+				postData.data = {
+					phone:self.submitData.phone
+				};
+				postData.smsAuth = {
+					phone:self.submitData.phone,						
+					code:self.submitData.code
+				};
 				const callback = (data) => {				
 					if (data.solely_code == 100000) {
 						uni.setStorageSync('canClick', true);

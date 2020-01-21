@@ -3,7 +3,7 @@
 	  <image class="photo" src="/static/images/img4.png"></image>
 	  <view class="mny center fat-font" style="text-align: center;">￥ {{mainData.price}}/天</view>
 	  <view class="writeBtn">
-	    <view class="LBtn btn color1 pubColor" @click="Router.redirectTo({route:{path:'/pages/star/star'}})"  open-type='navigate'>取消支付</view>
+	    <view class="LBtn btn color1 pubColor" @click="Router.redirectTo({route:{path:'/pages/index/index'}})"  open-type='navigate'>取消支付</view>
 	    <view class="RBt btn pubbj color5"   @click="Utils.stopMultiClick(addOrder)">确认支付</view>
 	  </view>
 	    <view class="titFS font26 color1 fat-font">收费方式：</view>
@@ -112,7 +112,7 @@
 										}
 									});
 									setTimeout(function() {
-										self.$Router.redirectTo({route:{path:'/pages/index/index'}})
+										self.$Router.redirectTo({route:{path:'/pages/payEwm/payEwm'}})
 									}, 1000);
 								} else {
 									uni.setStorageSync('canClick', true);
@@ -133,7 +133,7 @@
 								}
 							});
 							setTimeout(function() {
-								self.$Router.redirectTo({route:{path:'/pages/index/index'}})
+								self.$Router.redirectTo({route:{path:'/pages/payEwm/payEwm'}})
 							}, 1000);
 						};
 					} else {

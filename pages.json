@@ -59,7 +59,7 @@
 		{
 			"path": "pages/payEwm/payEwm",
 			"style": {
-				"navigationBarTitleText": "payEwm",//设置页面标题文字
+				"navigationBarTitleText": "二维码",//设置页面标题文字
 				"onReachBottomDistance":100
 			}
 		},

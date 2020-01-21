@@ -21,13 +21,18 @@
 			    @click="Utils.stopMultiClick(submit)" role="button" aria-disabled="false">登录</button>
 		  </view>
 		</view>
+		<c-tabbar></c-tabbar>
 	</view>
 	
 </template>
 
 <script>
+	import cTabbar from "@/components/tabbar/tabbar.vue"
+	
 	export default {
-		
+		components: {
+			cTabbar
+		},
 		data() {
 			return {
 				basic_blue:this.$AssetsConfig.basic_blue,
